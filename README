@@ -1,0 +1,18 @@
+In order for the to_csv to work, the @product = Product.order(:name), this canot be Product.all
+
+# adding debugger, enable gem debugger on Gemfile
+# once the browser hung until the debugger has finished
+# type help on console window to get all debugger option
+
+########################################################
+
+https://gist.github.com/1210155
+render syntax
+
+  format.text { render text: @products.to_yaml }
+  format.xml  { render  xml: @products }
+or
+  format.text { render :text => @products.to_yaml }
+  format.xml  { render :xml => @products }
+########################################################
+

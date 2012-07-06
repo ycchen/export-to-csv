@@ -1,0 +1,15 @@
+# create project csv
+rails new csv
+
+# create product model using scaffold
+rails g scaffold product  name:string price:decimal released_on:date
+
+# db:migrate
+rake db:migrate
+
+# add pre-load data for testing purpose
+# creating few line in seeds.rb
+Product.create!(name: "Settlers of Catan", price: 34.95, released_on: rand(1..90).days.ago)
+
+# db:setup
+rake db:setup

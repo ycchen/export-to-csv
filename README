@@ -16,3 +16,9 @@ or
   format.xml  { render :xml => @products }
 ########################################################
 
+controller
+
+respond_to :html, :xml
+
+#in the index method
+respond_with(@products)

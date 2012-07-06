@@ -1,8 +1,11 @@
 class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
+  # respond_to :html, :xml, :json
+  
   def index
     @products = Product.order(:id)
+      # respond_with(@products)
     
     respond_to do |format|
       format.html # index.html.erb

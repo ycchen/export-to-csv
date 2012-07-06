@@ -2,11 +2,12 @@
 <p>
   Download:
   <%= link_to "CSV", products_path(format: "csv") %>
+  <%= link_to "Text", products_path(format: "text") %>
+  <%= link_to "XML", products_path(format: "xml") %>
+  <%= link_to "JSON", products_path(format: "json") %>
 </p>
-<%= [1,2,3,4,5].inspect %>
 
 
-<%= simple_format @products.to_yaml %>
 <table>
   <tr>
     <th>Name</th>
